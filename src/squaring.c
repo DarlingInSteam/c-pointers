@@ -27,6 +27,10 @@ int input(int *a, int *n) {
             return 1;
         }
     }
+    char ch2;
+    if (scanf("%c", &ch2) != 1 || ch2 != '\n') {
+        return 1;
+    }
 
     return 0;
 }

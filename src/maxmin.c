@@ -8,13 +8,13 @@ int main() {
     char ch;
     if (scanf("%d %d %d%c", &x, &y, &z, &ch) != 4 || ch != '\n') {
         printf("n/a");
+        return 1;
     } else {
         int max, min;
 
         maxmin(x, y, z, &max, &min);
 
         printf("%d %d", max, min);
-        return 1;
     }
 
     return 0;
